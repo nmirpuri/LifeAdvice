@@ -3,7 +3,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import pandas as pd
-!pip install transformers
 from transformers import DistilBertTokenizer
 from transformers import DistilBertModel
 from torch.utils.data import Dataset, DataLoader
