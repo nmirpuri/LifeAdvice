@@ -24,7 +24,7 @@ class LifeAdvisorModel(nn.Module):
 # Load model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-checkpoint = torch.load('life_advice_model.pt', map_location=device)
+checkpoint = torch.load('life_advice_model.pth', map_location=device)
 label2id = checkpoint['label2id']
 id2label = {v: k for k, v in label2id.items()}
 
